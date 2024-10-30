@@ -1,0 +1,20 @@
+.success-body {
+    background-image: url("https://c8.alamy.com/comp/F5YTF4/a-vector-illustration-of-a-young-guy-giving-a-thumbs-up-and-smiling-F5YTF4.jpg");
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fail-body {
+    background-image: url("https://st2.depositphotos.com/34909262/42620/v/450/depositphotos_426206474-stock-illustration-unsuccessful-sad-businessman-many-thumbs.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.waiting-body {
+    background-image: url("https://media.istockphoto.com/id/1320033559/vector/pensive-man-standing-and-making-business-decision-isolated-flat-vector-illustration-cartoon.jpg?s=612x612&w=0&k=20&c=CwX0Ryk_gJVFXcsIHTsMjZX4jRMt4L0CrMPnDjXHlPo=");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
