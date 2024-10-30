@@ -16,7 +16,7 @@ function restart() {
     document.getElementById("txtNumber").value = "";
     document.getElementById("lblChancesLeft").innerHTML = `Chances left : ${chances}`;
     document.getElementById("lblResult").innerHTML = "Waiting for you to guess... [New Game]";
-    document.getElementById("lblResult").className = "d-flex align-items-center justify-content-center pt-3 pb-4";
+    document.getElementById("lblResult").className = "d-flex align-items-center justify-content-center pt-3 pb-4 text-bg-secondary";
 }
 
 function guess() {
