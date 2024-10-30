@@ -15,7 +15,7 @@ function restart() {
     
     document.getElementById("txtNumber").value = "";
     document.getElementById("lblChancesLeft").innerHTML = `Chances left : ${chances}`;
-    document.getElementById("lblResult").innerHTML = "Waiting for you to guess... [New Game]";
+    document.getElementById("lblResult").innerHTML = "Waiting for you to guess... ❓ [New Game] ";
     document.getElementById("lblResult").className = "d-flex align-items-center justify-content-center pt-3 pb-4 text-bg-secondary";
 }
 
@@ -37,24 +37,24 @@ function guess() {
         if (won) return restart();
 
         if (guessNumber == randomNumber) {
-            resultElement.innerHTML = `You won! The number was ${randomNumber}`;
+            resultElement.innerHTML = `You won! The number was ${randomNumber} ✅🎉`;
             resultElement.className = "d-flex align-items-center justify-content-center pt-3 text-success pb-4 ";
 
             won = true;
             
         } else if (guessNumber > randomNumber) {
-            resultElement.innerHTML = `Nope. Try again with a lower number!`;
+            resultElement.innerHTML = `Nope. Try again with a lower number! ❌⬇️`;
             resultElement.className = "d-flex align-items-center justify-content-center pt-3 text-danger pb-4"
 
         } else {
-            resultElement.innerHTML = `Nope. Try again with a higher number!`
+            resultElement.innerHTML = `Nope. Try again with a higher number! ❌⬆️`
             resultElement.className = "d-flex align-items-center justify-content-center pt-3 text-danger pb-4"
         }
 
         
     
     } else {
-        resultElement.innerHTML = `Game Over! The number was ${randomNumber} & you ran out of chances!`
+        resultElement.innerHTML = `Game Over! The number was ${randomNumber} & you ran out of chances! 😭`
         resultElement.className = "d-flex align-items-center justify-content-center pt-3 text-danger pb-4"
     }
 
